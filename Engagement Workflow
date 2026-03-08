@@ -1,0 +1,44 @@
+Tanasiom Aegis Security Assessment
+Client: Northbridge Logistics
+Scope: Internal infrastructure review
+
+Steps:
+
+Phase 1 — Network discovery
+
+Example commands:
+
+nmap -sn 192.168.56.0/24
+Phase 2 — Service enumeration
+
+Example:
+
+nmap -sV 192.168.56.104
+nmap -sV 192.168.56.105
+Phase 3 — Web application testing
+
+Against DVWA.
+
+Tools:
+
+nikto
+dirb
+burpsuite
+Phase 4 — Vulnerability validation
+
+Example:
+
+vsftpd backdoor
+
+telnet access
+
+weak web application controls
+
+Phase 5 — Risk report
+
+You produce findings like:
+
+Finding: Insecure FTP service
+Severity: High
+Impact: Remote system compromise
+Recommendation: Disable FTP and migrate to SFTP
