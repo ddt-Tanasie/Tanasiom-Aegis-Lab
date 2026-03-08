@@ -48,3 +48,16 @@ Link this repository to:
 
 ## Disclaimer
 This repository is for controlled lab use only. No testing should be conducted against systems without explicit authorization.
+
+
+## Lab Architecture
+
+The lab currently consists of multiple virtual machines running inside Oracle VirtualBox.
+
+Kali Linux is used as the security testing workstation.
+
+Ubuntu Server and Windows 10 simulate standard SME infrastructure components.
+
+Metasploitable is used as a deliberately vulnerable host to demonstrate attack paths and security weaknesses.
+
+The environment is connected through an isolated host-only network to allow controlled security testing without exposing systems to the internet.
